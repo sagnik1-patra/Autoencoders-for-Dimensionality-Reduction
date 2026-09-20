@@ -1,0 +1,12 @@
+project: Autoencoders for Dimensionality Reduction
+dataset: MNIST
+seed: 42
+epochs: 50
+batch_size: 256
+learning_rate: 0.001
+validation_split: 0.1
+vanilla_latent_dimension: 32
+convolutional_latent_dimension: 16
+vae_latent_dimension: 20
+gaussian_noise_factor: 0.5
+vae_beta: 1.0

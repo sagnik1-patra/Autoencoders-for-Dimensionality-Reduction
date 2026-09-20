@@ -1,0 +1,34 @@
+Vanilla:
+  latent_dimension: 32
+  MSE: 0.004879403859376907
+  training_minutes: 2.2518503149350484
+  compression_ratio: 24.5
+Convolutional:
+  latent_dimension: 16
+  MSE: 0.006648212671279907
+  training_minutes: 5.160336037476857
+  compression_ratio: 49.0
+Denoising:
+  latent_dimension: 16
+  MSE: 0.013364279642701149
+  training_minutes: 5.26272269487381
+  gaussian_metrics:
+    noisy_psnr: 9.385067728604202
+    denoised_psnr: 19.27670429768267
+    psnr_improvement: 9.891636569078468
+    noisy_ssim: 0.3751575930326414
+    denoised_ssim: 0.8458275880919093
+    ssim_improvement: 0.4706699950592679
+  salt_pepper_metrics:
+    noisy_psnr: 13.235840319593246
+    denoised_psnr: 21.131307469382755
+    psnr_improvement: 7.895467149789509
+    noisy_ssim: 0.5953761204429137
+    denoised_ssim: 0.8934842419974266
+    ssim_improvement: 0.29810812155451294
+VAE:
+  latent_dimension: 20
+  MSE: 0.012942368164658546
+  training_minutes: 10.822662476698557
+  compression_ratio: 39.2
+  beta: 1.0

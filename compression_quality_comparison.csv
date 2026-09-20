@@ -1,0 +1,4 @@
+Model,Latent_Dimension,Compression_Ratio,Reconstruction_MSE
+Vanilla,32,24.5,0.004879403859376907
+Convolutional,16,49.0,0.006648212671279907
+VAE,20,39.2,0.012942368164658546

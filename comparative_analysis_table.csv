@@ -1,0 +1,5 @@
+Model,Latent_Dim,Reconstruction_Loss,Training_Time_Min,Best_Use_Case
+Vanilla,32,0.004879403859376907,2.2518503149350484,Basic compression
+Convolutional,16,0.006648212671279907,5.160336037476857,Image compression
+Denoising,16,0.013364279642701149,5.26272269487381,Image denoising
+VAE,20,0.012942368164658546,10.822662476698557,Generative modeling

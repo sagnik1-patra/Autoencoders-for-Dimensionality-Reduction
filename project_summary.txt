@@ -1,0 +1,99 @@
+
+AUTOENCODERS FOR DIMENSIONALITY REDUCTION
+=========================================
+
+Dataset:
+MNIST
+
+Training Samples:
+60000
+
+Testing Samples:
+10000
+
+Image Size:
+28 x 28
+
+Original Dimension:
+784
+
+
+VANILLA AUTOENCODER
+-------------------
+Latent Dimension: 32
+MSE: 0.004879
+Compression Ratio: 24.50:1
+Training Time: 2.25 minutes
+
+
+CONVOLUTIONAL AUTOENCODER
+-------------------------
+Latent Dimension: 16
+MSE: 0.006648
+Compression Ratio: 49.00:1
+Training Time: 5.16 minutes
+
+
+DENOISING AUTOENCODER
+---------------------
+Latent Dimension: 16
+MSE: 0.013364
+Training Time: 5.26 minutes
+
+Gaussian Noisy PSNR:
+9.3851 dB
+
+Gaussian Denoised PSNR:
+19.2767 dB
+
+PSNR Improvement:
+9.8916 dB
+
+Gaussian Noisy SSIM:
+0.3752
+
+Gaussian Denoised SSIM:
+0.8458
+
+SSIM Improvement:
+0.4707
+
+
+VARIATIONAL AUTOENCODER
+-----------------------
+Latent Dimension: 20
+Beta: 1.0
+MSE: 0.012942
+Compression Ratio: 39.20:1
+Training Time: 10.82 minutes
+
+
+KEY FINDINGS
+------------
+
+1. Vanilla Autoencoder compresses 784 image features into 32 features.
+
+2. Convolutional Autoencoder compresses the image into a
+   16-dimensional latent representation.
+
+3. Convolutional layers preserve spatial image features such as
+   strokes, edges and curves.
+
+4. Denoising Autoencoder can reconstruct cleaner images from
+   Gaussian and Salt-and-Pepper corrupted images.
+
+5. PSNR and SSIM quantify image restoration performance.
+
+6. Increasing Gaussian noise makes reconstruction more difficult.
+
+7. PCA and t-SNE help visualize the learned latent representations.
+
+8. Smaller bottlenecks provide stronger compression but may reduce
+   reconstruction quality.
+
+9. The VAE learns a probabilistic latent representation.
+
+10. VAE latent vectors can be sampled to generate new digit images.
+
+11. Latent interpolation demonstrates smooth transitions between
+    learned digit representations.
